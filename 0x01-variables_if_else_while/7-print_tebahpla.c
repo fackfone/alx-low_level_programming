@@ -4,16 +4,16 @@
 
 /**
  * main - Entry point
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int i = 0, value = 0;
 
-	for (i = 0; i == 25; i++)
+	for (i = 0; i <= 25; i++)
 
 	{
-		value = 97 + i;
+		value = 122 - i;
 		putchar(value);
 	}
 	return (0);

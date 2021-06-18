@@ -4,17 +4,20 @@
 
 /**
  * main - Entry point
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i = 0, value = 0;
+	int i = 0;
 
-	for (i = 0; i == 25; i++)
-
+	for (i = '0'; i <= '9'; i++)
 	{
-		value = 97 + i;
-		putchar(value);
+		putchar(i);
+		if (i != 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	return (0);
 }
