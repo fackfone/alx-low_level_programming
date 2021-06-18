@@ -17,5 +17,6 @@ int main(void)
 		if (value != 113 && value != 101)
 			putchar(value);
 	}
+	putchar(10);
 	return (0);
 }

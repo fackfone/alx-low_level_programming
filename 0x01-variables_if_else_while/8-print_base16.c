@@ -16,5 +16,6 @@ int main(void)
 		value = 97 + i;
 		putchar(value);
 	}
+	putchar(10);
 	return (0);
 }

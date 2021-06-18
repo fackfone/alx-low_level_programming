@@ -23,5 +23,6 @@ int main(void)
 		putchar(value);
 	}
 	}
+	putchar(10);
 	return (0);
 }
