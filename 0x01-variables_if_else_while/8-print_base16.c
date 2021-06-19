@@ -8,14 +8,23 @@
  */
 int main(void)
 {
-	int i = 0, value = 0;
+	int i = 0, value = 0, j = 0, result = 0;
 
-	for (i = 0; i <= 15; i++)
+	for (i = 0; i <= 9; i++)
 
 	{
-		value = 97 + i;
+		value = '0' + i;
 		putchar(value);
 	}
+		if (i == 10)
+		{
+		for (j = 0; j <= 5; j++)
+
+			{
+			result = 97 + j;
+			putchar(result);
+			}
+		}
 	putchar(10);
 	return (0);
 }
