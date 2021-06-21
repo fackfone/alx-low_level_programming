@@ -8,18 +8,30 @@
  */
 int main(void)
 {
-	int i = 0, counter = 0;
+	int i, j;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		putchar(i);
-		if (counter != 9)
+		for (j = 0; j <= 99; j++)
 		{
-			putchar(44);
-			putchar(32);
+			if ((i != j) && (i < j))
+			{
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
+				putchar(' ');
+				putchar(j / 10 + '0');
+				putchar(j % 10 + '0');
+				if (i == 98 && j == 99)
+				{
+				}
+				else
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
 		}
-	counter++;
 	}
-	putchar(10);
+	putchar(32);
 	return (0);
 }
