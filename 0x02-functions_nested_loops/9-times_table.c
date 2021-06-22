@@ -1,18 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-void times_table(void);
-
-/**
- *main - Entry point
- *Return: Always 0(Success)
- */
-
-
-int main(void)
-{
-	times_table();
-	return (0);
-}
+#include "holberton.h"
 
 /**
  * times_table - Prints the 9 times table starting with 0
@@ -28,9 +16,9 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			result = i * j;
-			putchar(result + '0');
-			putchar(',');
-			putchar(' ');
+			_putchar(result + '0');
+			_putchar(',');
+			_putchar(' ');
 		}
 		putchar(10);
 	}

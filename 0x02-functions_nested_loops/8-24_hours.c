@@ -1,18 +1,6 @@
 #include <stdio.h>
+#include "hello.h"
 #include <ctype.h>
-void jack_bauer(void);
-
-/**
- *main - Entry point
- *Return: Always 0(Success)
- */
-
-
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}
 
 /**
  * jack_bauer - Prints every minute of the day from 00:00 to 23:59
@@ -27,12 +15,12 @@ void jack_bauer(void)
 
 		for (j = 0; j <= 59; j++)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar(':');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-			putchar(10);
+			_putchar(i / 10 + '0');
+			_putchar(i % 10 + '0');
+			_putchar(':');
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
+			_putchar(10);
 		}
 	}
 }

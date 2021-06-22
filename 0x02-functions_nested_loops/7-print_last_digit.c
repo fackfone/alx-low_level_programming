@@ -1,24 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-int print_last_digit(int);
-
-/**
- *main - Entry point
- *Return: Always 0(Success)
- */
-
-
-int main(void)
-{
-	int r;
-
-	print_last_digit(98);
-	print_last_digit(0);
-	r = print_last_digit(-1024);
-	putchar('0' + r);
-	putchar('\n');
-	return (0);
-}
+#include "holberton.h"
 
 /**
  * print_last_digit - Prints the last digit of a number

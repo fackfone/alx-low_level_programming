@@ -29,6 +29,6 @@ int print_sign(int n)
 		result = -1;
 		sign = '-';
 	}
-	putchar(sign);
+	_putchar(sign);
 	return (result);
 }
