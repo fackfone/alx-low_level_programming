@@ -1,67 +1,31 @@
 #include <stdio.h>
-#include <ctype.h>
-int print_sign(int n);
+#include "holberton.h"
 
 /**
- *main - Entry point
- *Return: Always 0(Success)
- */
-
-
-int main(void)
-{
-	int r;
-
-	r = print_sign(98);
-	putchar(',');
-	putchar(' ');
-	putchar(r + '0');
-	putchar('\n');
-	r = print_sign(0);
-	putchar(',');
-	putchar(' ');
-	putchar(r + '0');
-	putchar('\n');
-	r = print_sign(0xff);
-	putchar(',');
-	putchar(' ');
-	putchar(r + '0');
-	putchar('\n');
-	r = print_sign(-1);
-	putchar(',');
-	putchar(' ');
-	putchar(r + '0');
-	putchar('\n');
-	return (0);
-}
-
-/**
- * print_sign - Prints the sign of a number
+ * print_to_98 - Prints all natural numbers from n to 98
  * @n: The argument of the function that parses into function
- * Return: Always  1 if  n is greater than 0
- * Always 0 if n is 0
- * Always -1 if n is less than 0
  */
 
-int print_sign(int n)
+void print_to_98(int n)
 {
-	int result, sign;
+	int i;
 
-	if (n == 0)
+	if (n <= 98 || n < 0)
 	{
-		result = 0;
-		sign = '0';
-	}
-	else if (n > 0)
-	{
-		result = 1;
-		sign = '+';
+		for (i = n; i <= 98; i++)
+		{
+			putchar(i + '0');
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	else
 	{
-		result = -1;
-		sign = '-';
+		for (i = n; i <= 98; i++)
+		{
+			putchar(i + '0');
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	putchar(sign);
-	return (result);
 }
