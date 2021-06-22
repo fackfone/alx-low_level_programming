@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "hello.h"
+#include "holberton.h"
 #include <ctype.h>
 
 /**
