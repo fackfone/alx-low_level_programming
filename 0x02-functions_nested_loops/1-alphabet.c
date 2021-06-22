@@ -1,18 +1,5 @@
 #include <stdio.h>
-
-void print_alphabet(void);
-
-/**
- *main - Entry point
- *Return: Always 0(Success)
- */
-
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
+#include "lower.h"
 
 /**
  * print_alphabet - Print all the letters of the alphabet
