@@ -1,27 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-int _islower(int c);
-
-/**
- *main - Entry point
- *Return: Always 0(Success)
- */
-
-
-int main(void)
-{
-	int r;
-
-	r = _islower('H');
-	putchar(r + '0');
-	r = _islower('o');
-	putchar(r + '0');
-	r = _islower(108);
-	putchar(r + '0');
-	putchar(10);
-	return (0);
-}
-
+#include "holberton.h"
 /**
  * _islower - Checks if a character is lowercase
  * @c: The argument of the function and take as input characters
