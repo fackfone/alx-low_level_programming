@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "lower.h"
+#include "holberton.h"
 
 /**
  * print_alphabet - Print all the letters of the alphabet

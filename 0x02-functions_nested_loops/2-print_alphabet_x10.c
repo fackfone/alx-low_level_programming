@@ -1,19 +1,5 @@
 #include <stdio.h>
-
-void print_alphabet_x10(void);
-
-/**
- *main - Entry point
- *Return: Always 0(Success)
- */
-
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
-
+#include "holberton.h"
 
 /**
  * print_alphabet_x10 - Print 10 times all the letters of the alphabet
