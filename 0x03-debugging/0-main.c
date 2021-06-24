@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-int main (void)
+int main(void)
 {
 	int i;
 
@@ -13,5 +13,5 @@ int main (void)
 	positive_or_negative(i);
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
