@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <ctype.h>
+#include <stdio.h>
 
 /**
  * _isdigit - checks for a digit
