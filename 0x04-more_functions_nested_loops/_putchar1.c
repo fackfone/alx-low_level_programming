@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#include "holberton.h"
-=======
 #include <unistd.h>
 #include "holberton.h"
 
@@ -14,4 +11,3 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
->>>>>>> e0c6c66f4937637b94de6699c63fd1ac9afd8728
