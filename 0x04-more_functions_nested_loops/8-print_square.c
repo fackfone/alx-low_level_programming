@@ -8,9 +8,9 @@
 
 void print_square(int size)
 {
-	int i;
+	int i, counter = 0;
 
-	if (size == 0 || size <= 0)
+	if (size <= 0)
 	{
 		_putchar(10);
 	}
