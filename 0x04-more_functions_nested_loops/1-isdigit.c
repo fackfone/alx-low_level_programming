@@ -9,15 +9,13 @@
 
 int _isdigit(int c)
 {
-	int retval;
-
 	if (isdigit(c))
 	{
-		retval = 1;
+		return (1);
 	}
 	else
 	{
-		retval = 0;
+		return (0);
 	}
-	return (retval);
+	_putchar('\n');
 }

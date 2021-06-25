@@ -9,15 +9,13 @@
 
 int _isupper(int c)
 {
-	int retval;
-
 	if (isupper(c))
 	{
-		retval = 1;
+		return (1);
 	}
 	else
 	{
-		retval = 0;
+		return (0);
 	}
-	return (retval);
+	_putchar('\n');
 }

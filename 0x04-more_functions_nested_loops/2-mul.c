@@ -9,9 +9,6 @@
 
 int mul(int a, int b)
 {
-	int retval;
-
-	retval = a * b;
+	return (a * b);
 	_putchar('\n');
-	return (retval);
 }
