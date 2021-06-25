@@ -2,8 +2,8 @@
 
 /**
  * mul - multiplies two integers
- * @a: first parameter of the function
- * @b: second parameter of the function
+ * @a: first argument
+ * @b: second argument
  * Return: a times b
  */
 
