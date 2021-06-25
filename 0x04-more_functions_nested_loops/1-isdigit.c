@@ -19,6 +19,5 @@ int _isdigit(int c)
 	{
 		retval = 0;
 	}
-	_putchar('\n');
 	return (retval);
 }

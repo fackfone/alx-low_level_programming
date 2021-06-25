@@ -19,6 +19,5 @@ int _isupper(int c)
 	{
 		retval = 0;
 	}
-	_putchar('\n');
 	return (retval);
 }
