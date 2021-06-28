@@ -8,7 +8,6 @@ int main(void)
 	char *str;
 
 	str = "Holberton";
-	len = _strlen(str);
-	printf("%d\n ", len);
+	rev_string(str);
 	return (0);
 }
