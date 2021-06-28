@@ -4,10 +4,11 @@
 int main(void)
 
 {
-	int n = 402;
+	int len;	
+	char *str;
 
-	printf("n = %d\n", n);
-	reset_to_98(&n);
-	printf("n = %d\n", n);
+	str = "Holberton";
+	len = _strlen(str);
+	printf("%d\n ", len);
 	return (0);
 }

@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * swap - function that swaps the values of two integers
+ * swap_int - function that swaps the values of two integers
  * @a: first argument of the function
  * @b: second argument of the function
  */
 
-void swap(int *a, int *b)
+void swap_int(int *a, int *b)
 {
 	int i;
 
