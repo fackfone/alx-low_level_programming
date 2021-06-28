@@ -6,9 +6,13 @@ int main(void)
 {
 	int len;	
 	char *str;
+	int array[5];
+	array[0] = 12;
+	array[1] = 102;
+	array[2] = 120;
+	array[3] = 1200;
+	array[4] = 1002;
 
-	str = "Holberton is one of the best thing that happens in my life for this year 2021";
-	printf("%d", _strlen(str));
-	puts_half(str);
+	print_array(array, 5);
 	return (0);
 }
