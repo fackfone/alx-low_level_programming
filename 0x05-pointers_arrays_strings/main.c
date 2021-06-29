@@ -4,15 +4,10 @@
 int main(void)
 
 {
-	int len;	
-	char *str;
-	int array[5];
-	array[0] = 12;
-	array[1] = 102;
-	array[2] = 120;
-	array[3] = 1200;
-	array[4] = 1002;
+	char array[10] = "Holberton";
 
-	print_array(array, 5);
+	printf("%s\n", array);
+	rev_string(array);
+	printf("%s\n", array);
 	return (0);
 }
