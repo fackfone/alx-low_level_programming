@@ -4,13 +4,13 @@
 int main(void)
 
 {
-	char x[] = "Holberton School. Prepare for the worst. Capitalize on what comes. hello world!\n";
+	char x[] = "Holberton School. Prepare, for the worst. Capitalize on what comes. hello world!\n";
 	char *ptr;
 	/*
 	 * char ba[] = "is nice.\n";
 	 * */
 	
-	ptr = cap_string(x);
+	ptr = leet(x);
 	printf("%s", ptr);
 	printf("%s", x);
 

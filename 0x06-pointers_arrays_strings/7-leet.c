@@ -3,39 +3,27 @@
 #include <stdio.h>
 
 /**
-* leet - function that encode a string into 1337
+ * leet - function that encode a string into 1337
  * @s: first  argument of the function
- * Return: the encoded value 
+ * Return: the encoded value
  */
 
 char *leet(char *s)
 {
-	int i;
+	int i, j, k;
+	char encode[15] = "aA4eE3oO0tT7lL1";
 
-	for (i = 0; s[i] != '\0' ; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (s[i] == 'a' || s[i] == 'A')
+		for (k = 0; k <= 4 ; k++)
 		{
-			s[i] = '4';
+			j = 3 * k;
+			if (s[i] == encode[j] || s[i] == encode[j + 1])
+			{
+				s[i] = encode[j + 2];
+			}
 		}
-		while (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = '3';
-		}
-		while (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = '0';
-		}
-		while (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = '7';
-		}
-		while (s[i] == 'l' || s[i] == 'L')
-		{
-			s[i] = '1';
-		}
-	
 	}
-	return (strcat(dest, src));
+	return (s);
 
 }
