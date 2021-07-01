@@ -4,15 +4,21 @@
 int main(void)
 
 {
-	char x[] = "Holberton School. Prepare, for the worst. Capitalize on what comes. hello world!\n";
+	char x[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
 	char *ptr;
 	/*
 	 * char ba[] = "is nice.\n";
 	 * */
 	
-	ptr = leet(x);
-	printf("%s", ptr);
+	ptr = rot13(x);
 	printf("%s", x);
+	printf("**************************************************************\n");
+	printf("%s", ptr);
+	printf("**************************************************************\n");
+	ptr = rot13(x);
+	printf("%s", x);
+	printf("**************************************************************\n");
+	printf("%s", ptr);
 
 	/*
 	 * print_array(a, sizeof(a) / sizeof(int));
