@@ -4,14 +4,13 @@
 int main(void)
 
 {
-	char x[] = "Holberton School\n";
+	char x[] = "Holberton School. Prepare for the worst. Capitalize on what comes. hello world!\n";
 	char *ptr;
 	/*
 	 * char ba[] = "is nice.\n";
 	 * */
 	
-	printf("%lu\n", sizeof(x));
-	ptr = string_toupper(x);
+	ptr = cap_string(x);
 	printf("%s", ptr);
 	printf("%s", x);
 
