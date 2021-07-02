@@ -32,6 +32,15 @@ char *cap_string(char *s)
 			}
 			continue;
 		}
+		else if (!isdigit(s[i]) && !isalpha(s[i]))
+		{
+			++i;
+			if (islower(s[i]))
+			{
+				s[i] = toupper(s[i]);
+			}
+			continue;
+		}
 		else
 		{
 			if (islower(s[i]))
