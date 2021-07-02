@@ -4,7 +4,7 @@
 int main(void)
 
 {
-	print_number(98);
+	print_number(9825);
 	_putchar(10);
 	print_number(0);
 	_putchar(10);
