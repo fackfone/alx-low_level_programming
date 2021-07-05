@@ -19,7 +19,5 @@
 ## ADVANCED
 
 
-
-
 ******************************************************************************************************
-> Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEER Cohort 3 June 2021
+> Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021
