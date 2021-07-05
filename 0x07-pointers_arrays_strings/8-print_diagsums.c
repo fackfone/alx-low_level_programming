@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 /**
@@ -11,8 +12,8 @@
 void print_diagsums(int *a, int size)
 {
 	int *arr;
-	unsigned int i, j, k, c = 0;
-	int left_sum = 0, right_sum = 0;
+	int i, j, k, c = 0;
+	int left_sum = 0, right_sum = 0, result1, result2;
 
 	c = size - 1;
 	arr = &a[0];
@@ -22,14 +23,16 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				left_sum += *(arr + i * size + j);
+				result1 = *(arr + i * size + j);
+				left_sum += result1;
 			}
 		}
-		for (k = 0; k < size; k++)
+		for (k = c; k >= 0; k--)
 		{
-			if (i + k == c)
+			if ((i + k) == c)
 			{
-				right_sum += *(arr + i * size + j);
+				result2 = *(arr + i * size + k);
+				right_sum += result2;
 			}
 		}
 	}
