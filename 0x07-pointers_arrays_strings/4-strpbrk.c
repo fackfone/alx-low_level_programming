@@ -8,7 +8,7 @@
  * Return: bytes from s which consitst of bytes from accept
  */
 
-char *_strpbrk(char *s, char accept)
+char *_strpbrk(char *s, char *accept)
 {
 	return (strpbrk(s, accept));
 }

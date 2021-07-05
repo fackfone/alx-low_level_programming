@@ -8,7 +8,7 @@
  * Return: bytes from s which consitst of bytes from accept
  */
 
-char *_strspn(char *s, char accept)
+char *_strspn(char *s, char *accept)
 {
 	return (strspn(s, accept));
 }
