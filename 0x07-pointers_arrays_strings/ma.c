@@ -6,12 +6,17 @@
 
 int main(void)
 {
-	char *s = "hello, world";
-	char *f = "oleh";
-	unsigned int n;
+	char board[8][8] = {
+		{'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+		{'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+		{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+	};
 
-	f = _strspn(s, 'l');
-
-	printf("%u\n", n);
+	print_chessboard(board);
 	return (0);
 }
