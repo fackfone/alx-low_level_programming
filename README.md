@@ -1,4 +1,4 @@
-#DESCRIPTION :octocat:
+# DESCRIPTION :octocat:
 
 This repository contains all the tasks that have been done for the repository __alx-low_level_programming__.
 
