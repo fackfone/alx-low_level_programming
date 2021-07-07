@@ -18,7 +18,7 @@
 
 :one::zero::zero: 100-is_palindrome returns `1` if a string is a plindrome and `0` if not
 
-
+:one::zero::one: 101-wildcmp compares two strings and  returns `1` if strings can be considerd identical  and `0` otherwise.
 
 
 
