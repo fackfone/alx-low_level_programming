@@ -16,6 +16,8 @@
 
 # ADVANCED :level:
 
+:one::zero::zero: 100-is_palindrome returns `1` if a string is a plindrome and `0` if not
+
 
 
 
