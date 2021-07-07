@@ -12,11 +12,15 @@ We are going to update all the different challenges that are supposed to be done
 
 :three: 0x03.C - Debugging
 
-:four: 0x04.C - Pointers, arrays and strings
+:four: 0x04.C - More Functions, more nested loops
 
-:five: 0x05.C - More pointers, arrays and strings
+:five: 0x05.C - Pointers, arrays and strings
 
+:six: 0x06.C - More pointers, arrays and strings
 
+:seven: 0x07.C - Even more pointers, arrays and strings
+
+:eight: 0x08.C - Recursion
 
 *********************************************************************************
 > Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021

@@ -21,7 +21,7 @@ int check_palindrome_char(char *s, int first_char, int last_char)
 	}
 	else if (s[first_char] != s[last_char])
 	{
-		return (check_palindrome_char(s, 0, len - 1));
+		return (0);
 	}
 	else if (first_char < last_char + 1)
 	{

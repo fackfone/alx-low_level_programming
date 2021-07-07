@@ -14,7 +14,7 @@
 
 :six: 6-is_prime_number.c returns 0 if prime number and 0 otherwise
 
-# ADVANCED :level:
+# ADVANCED :arrow_upper_right:
 
 :one::zero::zero: 100-is_palindrome returns `1` if a string is a plindrome and `0` if not
 
