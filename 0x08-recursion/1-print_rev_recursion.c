@@ -3,11 +3,15 @@
 #include <stdio.h>
 
 /**
- * _puts_recursion - a function that prints a string
+ * _print_rev_recursion - a function that prints a string in reverse
  * @s: first argument of the function and pointer
  */
 
-char _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
-	return (puts(s));
+	if (*s)
+	{
+		_print_rev_recursion(s + 1);
+		putchar(*s);
+	}
 }
