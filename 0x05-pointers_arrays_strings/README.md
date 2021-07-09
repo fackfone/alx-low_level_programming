@@ -25,9 +25,6 @@
 
 :one::zero::zero: 100-atoi.c converts a string to an integer
 
-:one::zero::one: 101-print_number.c displays integers (use of `printf` forbidden)
-
-
 
 ******************************************************************************************************
 > Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021
