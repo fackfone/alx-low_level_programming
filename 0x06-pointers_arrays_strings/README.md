@@ -16,11 +16,11 @@
 
 :seven: 7-leet.c encodes a string into `1337`
 ```
-- Letters ***a*** and ***A*** should be replaced by ***4***
-- Letters ***e*** and ***E*** should be replaced by ***3***
-- Letters ***o*** and ***O*** should be replaced by ***0***
-- Letters ***t*** and ***T*** should be replaced by ***7***
-- Letters ***l*** and ***L*** should be replaced by ***1***
+- Letters a and A should be replaced by 4
+- Letters e and E should be replaced by 3
+- Letters o and O should be replaced by 0
+- Letters t and T should be replaced by 7
+- Letters l and L should be replaced by 1
 ```
 
 ## ADVANCED ↗️
@@ -34,8 +34,8 @@
 - Use of a forbidden
 - Forbidden to modify the variable p
 - Only one statement
-- Not allowed to use `,`
-- Code written exactly at `line 19`
+- Not allowed to use ,
+- Code written exactly at line 19
 - Do not remove anything in the existant code with comments
 - Not allowed to code anything, `JUST A LINE OF CODE THATS ALL`
 ```
