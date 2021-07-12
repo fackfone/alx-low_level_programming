@@ -31,5 +31,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", add_arg);
+	printf("\n");
 	return (0);
 }
