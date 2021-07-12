@@ -20,9 +20,13 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			arg = atoi(argv[i]);
-			if (!(arg == 0))
+			if (!(arg == 0) && arg > 0)
 			{
 				add_arg += arg;
+			}
+			else if(arg < 0)
+			{	printf("Error\n");
+				return (1);
 			}
 			else
 			{	printf("Error\n");
