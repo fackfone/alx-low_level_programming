@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			arg = atoi(argv[i]);
-			if (!(arg == 0) && arg > 0)
+			if (arg >= 0)
 			{
 				add_arg += arg;
 			}
