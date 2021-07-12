@@ -24,10 +24,6 @@ int main(int argc, char *argv[])
 			{
 				add_arg += arg;
 			}
-			else if(arg < 0)
-			{	printf("Error\n");
-				return (1);
-			}
 			else
 			{	printf("Error\n");
 				return (1);
