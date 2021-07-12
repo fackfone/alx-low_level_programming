@@ -30,6 +30,11 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
+	else
+	{
+		printf("0\n");
+		return (0);
+	}
 	printf("%d\n", add_arg);
 	return (0);
 }
