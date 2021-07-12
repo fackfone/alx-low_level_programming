@@ -12,7 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	int add_arg = 0, i, arg;
+	int i, arg = 0;
+	int add_arg = 0;
 
 	if (argc > 1)
 	{
