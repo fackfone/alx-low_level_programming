@@ -11,8 +11,10 @@
 
 int main(int argc, char *argv[])
 {
-	int count_arg = 0, i;
+	int count_arg, i;
 
+	count_arg = 0;
+	(void) **argv;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
