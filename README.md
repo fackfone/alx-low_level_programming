@@ -22,5 +22,9 @@ We are going to update all the different challenges that are supposed to be done
 
 :eight: 0x08.C - Recursion
 
+:nine: 0x09.C - Static libraries
+
+:one::zero: 0x0A.C - argc, argv 
+
 *********************************************************************************
 > ***Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021***
