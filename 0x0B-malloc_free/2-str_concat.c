@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 			{
 				*(pt_ar + k + len1) = *(s2 + k);
 			}
-			*(ptr + value) = '\0';
+			*(pt_ar + value) = '\0';
 		}
 	}
 	return (pt_ar);
