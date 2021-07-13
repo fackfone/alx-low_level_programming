@@ -19,9 +19,9 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for(k = 0; k < ac; k++)
+	for (k = 0; k < ac; k++)
 	{
-		value +=strlen(av[k]);
+		value += strlen(av[k]);
 		value++;
 	}
 	ptr = malloc(value + 1);
