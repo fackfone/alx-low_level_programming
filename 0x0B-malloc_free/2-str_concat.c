@@ -17,19 +17,15 @@ char *str_concat(char *s1, char *s2)
 
 	len1 = strlen(s1);
 	len2 = strlen(s2);
-	if (s1 == NULL && s2 != NULL)
+	if (s2 == NULL)
 	{
-		*pt_ar = *s2;
+		s2 = '\0';
 	}
-	else if (s1 != NULL && s2 == NULL)
+	if (s1 == NULL)
 	{
-		*pt_ar = *s1;
+		s1 = '\0';
 	}
-	else if (s1 == NULL && s2 == NULL)
-	{
-		*pt_ar = "  ";
-	}
-	else
+	if (1)
 	{
 		value = (int)(len1 + len2);
 		pt_ar = malloc(value + 1);
@@ -47,6 +43,7 @@ char *str_concat(char *s1, char *s2)
 			{
 				*(pt_ar + k + len1) = *(s2 + k);
 			}
+			*(ptr + value) = '\0';
 		}
 	}
 	return (pt_ar);
