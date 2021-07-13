@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include "holberton.h"
 
@@ -11,14 +12,19 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, j, counter = 0;
+	int i, j, k, value = 0, counter = 0;
 	char *ptr;
 
-	ptr = malloc(ac);
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
+	for(k = 0; k < ac; k++)
+	{
+		value +=strlen(av[k]);
+		value++;
+	}
+	ptr = malloc(value + 1);
 	if (ptr == NULL)
 	{
 		free(ptr);
