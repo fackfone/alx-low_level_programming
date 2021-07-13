@@ -11,7 +11,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i;
+	int i, j, counter = 0;
 	char *ptr;
 
 	ptr = malloc(ac);
@@ -29,8 +29,9 @@ char *argstostr(int ac, char **av)
 	{
 		for (i = 0; i < ac; i++)
 		{
-			for (j = 0; av[i][j] != 0; j++, counter++)
+			for (j = 0; av[i][j] != 0; j++)
 			{
+				counter++;
 				ptr[counter] = av[i][j];
 			}
 			ptr[counter] = '\n';
