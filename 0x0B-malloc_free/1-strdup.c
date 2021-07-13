@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	else
 	{
 		value = (int)(strlen(str));
-		pt_ar = malloc(value);
+		pt_ar = malloc(value + 1);
 		if (pt_ar == NULL)
 		{
 			return (NULL);

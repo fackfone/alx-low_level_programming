@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		pt_ar = malloc(sizeof(int) * size);
-		value = (int)(sizeof(int) * size);
+		value = sizeof(int) * size;
 		if (pt_ar == NULL)
 		{
 			return (NULL);
