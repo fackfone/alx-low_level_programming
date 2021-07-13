@@ -12,7 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *pt_ar;
-	int value = 0, i;
+	int i;
 
 	if (size == 0)
 	{
@@ -20,15 +20,14 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		pt_ar = malloc(sizeof(int) * size);
-		value = sizeof(int) * size;
+		pt_ar = malloc(sizeof(c) * size);
 		if (pt_ar == NULL)
 		{
 			return (NULL);
 		}
 		else
 		{
-			for (i = 0; i < value; i++)
+			for (i = 0; i < size; i++)
 			{
 				*(pt_ar + i) = c;
 			}

@@ -19,20 +19,20 @@ char *str_concat(char *s1, char *s2)
 	len2 = strlen(s2);
 	if (s1 == NULL && s2 != NULL)
 	{
-		pt_ar = s2;
+		*pt_ar = *s2;
 	}
 	else if (s1 != NULL && s2 == NULL)
 	{
-		pt_ar = s1;
+		*pt_ar = *s1;
 	}
 	else if (s1 == NULL && s2 == NULL)
 	{
-		pt_ar = " ";
+		*pt_ar = "  ";
 	}
 	else
 	{
 		value = (int)(len1 + len2);
-		pt_ar = malloc(value);
+		pt_ar = malloc(value + 1);
 		if (pt_ar == NULL)
 		{
 			return (NULL);

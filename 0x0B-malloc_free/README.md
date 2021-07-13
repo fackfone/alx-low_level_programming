@@ -6,9 +6,9 @@
 
 :two: 2-str_concat .c concatenates two strings
 
-:three: 3-alloc_grid.c returns to 0 2 dimensional array of integers
+:three: 3-alloc_grid.c creates a 2 dimensional array of integers
 
-:four: 4-free_grid.c deallocates a 2 dimensional grid previosly created by alloc_grid
+:four: 4-free_grid.c deallocates a 2 dimensional grid previously created by alloc_grid
 
 # ADVANCED :arrow_upper_right:
 
