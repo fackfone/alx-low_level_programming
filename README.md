@@ -26,5 +26,9 @@ We are going to update all the different challenges that are supposed to be done
 
 :one::zero: 0x0A.C - argc, argv 
 
+:one::one: 0x0B.C - malloc, free 
+
+:one::two: 0x0C.C - More malloc, free 
+
 *********************************************************************************
 > ***Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021***
