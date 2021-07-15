@@ -16,7 +16,7 @@ int *array_range(int min, int max)
 	int value = 0;
 	int c = min;
 
-	if (max < min || min < 0 || max < 0)
+	if (max < min)
 	{
 		return (NULL);
 	}
@@ -30,7 +30,7 @@ int *array_range(int min, int max)
 		}
 		else
 		{
-			for (i = min; i <= max; i++)
+			for (i = min; i < value; i++)
 			{
 				*(pt_ar + i) = c;
 				c++;
