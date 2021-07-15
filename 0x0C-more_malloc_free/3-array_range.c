@@ -30,7 +30,7 @@ int *array_range(int min, int max)
 		}
 		else
 		{
-			for (i = min; i < value; i++)
+			for (i = 0; i < value; i++)
 			{
 				*(pt_ar + i) = c;
 				c++;
