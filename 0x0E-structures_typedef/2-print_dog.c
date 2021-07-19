@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -13,7 +14,11 @@ void print_dog(struct dog *d)
 	{
 		d->name = "(nil)";
 	}
-	else if(d->owner == NULL)
+	if(d->owner == NULL)
+	{
+		d->owner = "(nil)";
+	}
+	if(!(d->age))
 	{
 		d->owner = "(nil)";
 	}
