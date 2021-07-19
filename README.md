@@ -30,5 +30,9 @@ We are going to update all the different challenges that are supposed to be done
 
 :one::two: 0x0C.C - More malloc, free 
 
+:one::three: 0x0D.C - Preprocessor 
+
+:one::four: 0x0E.C - Structures, Typedef 
+
 *********************************************************************************
 > ***Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021***
