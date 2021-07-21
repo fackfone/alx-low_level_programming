@@ -10,7 +10,7 @@
 
 # ADVANCED :arrow_upper_right:
 
-:one::zero::zero: 100
+:one::zero::zero: 100-main_opcodes.c prints the `opcodes` of its own main function
 
 
 ******************************************************************************************************
