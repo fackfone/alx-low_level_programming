@@ -34,5 +34,9 @@ We are going to update all the different challenges that are supposed to be done
 
 :one::four: 0x0E.C - Structures, Typedef 
 
+:one::five: 0x0F.C - Functions pointers
+
+:one::six: 0x10.C - Variadic functions
+
 *********************************************************************************
 > ***Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021***
