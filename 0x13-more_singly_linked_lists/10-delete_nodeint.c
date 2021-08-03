@@ -1,53 +1,45 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
-
+#include <stdio.h>
 /**
- * nodeLen - Prints the length of the list
- * @head: points to the singly linked list created
- * Return: the length of nodes
+ * delete_nodeint_at_index - deletes a node at a given position.
+ * @head: head of linked list
+ * @index: index to delete
+ * Return: 1 if it succeeded, -1 if it failed
  */
 
-unsigned int nodeLen(listint_t *head)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *nextNode;
-	unsigned int start = 1, numberNode = 0;
+	listint_t *current;
+	listint_t *tmp;
 
-	nextNode = head;
-	while (start)
+	if (head == NULL || (*head) == NULL)
+		return (-1);
+
+	current = *head;
+	if (index == 0)
 	{
-		numberNode++;
-		if (nextNode->next == NULL)
-			start = 0;
-		nextNode = nextNode->next;
+		if ((*head)->next)
+			(*head) = (*head)->next;
+		else
+			(*head) = NULL;
+		free(current);
+		return (1);
 	}
-	free(nextNode);
-	return (numberNode);
-}
 
-/**
- * delete_nodeint_at_index - Delete node at index of a linked list
- * @head: points a pointer to the singly linked list
- * @index: The index of the node starting at 0
- * Return:1 if success, -1 otherwise
- */
-
-int delete_nodeint_at_index(listint_t **head, unsigned int index);
-{
-	listint_t *node, *nextNode, *prevNode;
-	unsigned int i;
-
-	if (idx > nodeLen(*head))
+	while (index != 1)
 	{
-		return (NULL);
+		if (current->next == NULL)
+			return (-1);
+
+		current = current->next;
+		--index;
 	}
-	prevNode = *head;
-	node = malloc(sizeof(listint_t));
-	for (i = 0; i < idx - 1; i++)
-		prevNode = prevNode->next;
-	nextNode = prevNode->next;
-	prevNode->next = node;
-	node->n = n;
-	node->next = nextNode;
-	return (node);
+	tmp = current->next;
+	if (current->next->next)
+		current->next = current->next->next;
+	else
+		current->next = NULL;
+	free(tmp);
+
+	return (1);
 }
