@@ -12,10 +12,8 @@ size_t listint_len(const listint_t *h)
 {
 	size_t numberNode = 0;
 	int start = 1;
-	listint_t *forwardPtr;
 
-	forwardPtr = malloc(sizeof(listint_t));
-	if (forwardPtr == NULL)
+	if (h == NULL)
 	{
 		printf("Error\n");
 		return (1);
@@ -25,9 +23,7 @@ size_t listint_len(const listint_t *h)
 	numberNode++;
 	if (h->next == NULL)
 		start = 0;
-	forwardPtr = h->next;
-	h = forwardPtr;
+	h = h->next;
 	}
-	free(forwardPtr);
 	return (numberNode);
 }
