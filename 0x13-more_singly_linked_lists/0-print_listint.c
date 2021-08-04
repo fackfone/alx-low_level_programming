@@ -11,20 +11,12 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t numberNode = 0;
-	int start = 1;
 
-	if (h == NULL)
+	while (h != NULL)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	while (start)
-	{
-	numberNode++;
-	printf("%d\n", h->n);
-	if (h->next == NULL)
-		start = 0;
-	h = h->next;
+		printf("%d\n", h->n);
+		h = h->next;
+		numberNode++;
 	}
 	return (numberNode);
 }
