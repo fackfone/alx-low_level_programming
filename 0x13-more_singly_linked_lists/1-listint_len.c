@@ -11,19 +11,11 @@
 size_t listint_len(const listint_t *h)
 {
 	size_t numberNode = 0;
-	int start = 1;
 
-	if (h == NULL)
+	while (h != NULL)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	while (start)
-	{
-	numberNode++;
-	if (h->next == NULL)
-		start = 0;
 	h = h->next;
+	numberNode++;
 	}
 	return (numberNode);
 }
