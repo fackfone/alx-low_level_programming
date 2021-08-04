@@ -13,7 +13,9 @@ int pop_listint(listint_t **head)
 {
 	listint_t *nextNode, *prevNode;
 	int c = 0;
-
+	
+	if (!head || *head == NULL)
+		return (0);
 	if (head != NULL)
 	{
 		prevNode = *head;
@@ -23,5 +25,4 @@ int pop_listint(listint_t **head)
 		free(prevNode);
 		return (c);
 	}
-	return (0);
 }
