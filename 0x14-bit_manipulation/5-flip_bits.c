@@ -11,7 +11,7 @@
  * number to another
  */
 
-unsigned int flip_bits(unsigned long int m, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int count, i;
 	unsigned long int range, checker;
