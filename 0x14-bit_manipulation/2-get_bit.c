@@ -36,10 +36,11 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int divider = 0;
 	unsigned long int remainder = 0;
-	char remStore[1000];
+	char *remStore;
 	int i = 0;
 	unsigned int length;
 
+	remStore = malloc(sizeof(unsigned long int) * 1000);
 	while (n != 0)
 	{
 		divider = n >> 1;
