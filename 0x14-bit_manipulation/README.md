@@ -4,9 +4,9 @@
 
 :one: 1-print_binary.c prints the binary representation of a number
 
-:two: 2-strlen_recursion.c return the length of a string
+:two: 2-get_bit.c Returns the bit of a string at specific index
 
-:three: 3-factorial.c returns the factorial of a given number
+:three: 3-set_bit.c Seets the value of a bit to 1 at a given index
 
 :four: 4-pow_recursion.c returns the value of a number x raised to power y
 
