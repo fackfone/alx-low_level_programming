@@ -3,16 +3,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** 
+/**
  * reverse - Reverse a string
- * string - first argment and string
+ * @string:first argment and string
  * Return: the reversed string
  */
-char* reverse (char string[])
+char *reverse(char string[])
 {
-	unsigned int i = 0,len = 0;
-       	unsigned int c, d;
-	
+	unsigned int i = 0, len = 0;
+	unsigned int c, d;
+
 	len = strlen(string);
 	while (string[i] != '\0')
 	{
@@ -36,11 +36,10 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int divider = 0;
 	unsigned long int remainder = 0;
-	char *remStore;
+	char remStore[1000];
 	int i = 0;
 	unsigned int length;
-	
-	remStore = malloc(sizeof(unsigned long int) * 1000);
+
 	while (n != 0)
 	{
 		divider = n >> 1;
