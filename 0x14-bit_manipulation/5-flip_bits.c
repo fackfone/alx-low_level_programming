@@ -15,7 +15,10 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int count, i;
 	unsigned long int range, checker;
-
+	
+	count = 0;
+	checker = 1;
+	range = n ^ m;
 	for (i = 0; i < (sizeof(unsigned long int) * 8); i++)
 	{
 		if (check == (diff & check))
