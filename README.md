@@ -38,5 +38,11 @@ We are going to update all the different challenges that are supposed to be done
 
 :one::six: 0x10.C - Variadic functions
 
+:one::eight: 0x12.C - Singly linked lists
+
+:one::nine: 0x13.C - More singly linked lists
+
+:two::zero: 0x14.C - Bit manipulation
+
 *********************************************************************************
 > ***Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021***
