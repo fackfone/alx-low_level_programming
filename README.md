@@ -44,5 +44,7 @@ We are going to update all the different challenges that are supposed to be done
 
 :two::zero: 0x14.C - Bit manipulation
 
+:two::one: 0x15.C - File I/O 
+
 *********************************************************************************
 > ***Powered by *fackfone* for ALX - HOLBERTON SOFTWARE ENGINEERING Cohort 3 June 2021***

@@ -1,5 +1,33 @@
 #include "main.h"
-#include <string.h>
+#include <string.h> 
+
+/**
+ * read_textfile - Read the contents in a file
+ * @file: File to read and pointer
+ * @size: Size of bytes to print to sdout
+ */
+ssize_t read_textfile(const char* file, size_t size)
+{
+	int fdes;
+	ssize_t to_return;
+	char *buf;
+
+	fdes = open(file, O_RDONLY);
+	if (fdes == -1)
+		return (0);
+	buf = malloc((sizeof(char) * size) + 1);
+	to_return = read(fdes, buf, size);
+	if (to_return == -1)
+	{
+		free(buf);
+		close(fdes);
+		return (0);
+	}
+	free(buf);
+	close(fdes);
+	return (to_return);
+
+}
 
 /**
  * _strlen - Computes the length of a string
@@ -25,10 +53,14 @@ int _strlen(char *s)
 int create_file(const char *filename, char *textcontent)
 {
 	ssize_t length;
-	int fd;
+	int fd, fdr;
 
 	if (filename == NULL)
 		return (-1);
+	fdr = read_textfile(filename, 1000);
+	if (fdr == 1)
+		return (-1);
+	close(fdr);
 	fd = open(filename, O_CREAT | O_RDONLY | O_TRUNC, 0600);
 	if (fd == -1)
 	{
