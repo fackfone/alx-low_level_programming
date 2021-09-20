@@ -1,8 +1,8 @@
 # WHAT DO THE SCRIPTS DO :octocat:
 
-:zero: libdynamic.a is a dynamic library that contains a set of functions
+:zero: libdynamic.so is a dynamic library that contains a set of functions
 
-:one: 1-create_dynamic_lib.sh is a script that creates a dynamic library calledd `liball.a` from all the `.c` files in the current directory
+:one: 1-create_dynamic_lib.sh is a script that creates a dynamic library calledd `liball.so` from all the `.c` files in the current directory
 
 
 
